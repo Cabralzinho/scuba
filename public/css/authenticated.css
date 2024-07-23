@@ -1,0 +1,44 @@
+.desktop-nav {
+    background: #121827;
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    border-right: 1px solid #374151;
+}
+
+.desktop-nav h2 {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.placeholder-color::placeholder, .placeholder-color:focus {
+    color: white;
+    box-shadow: none;
+}
+
+
+.top-nav {
+    border-bottom: 1px solid #374151;
+}
+
+.aside-link {
+    color: #9CA3AF;
+    text-decoration: none;
+    padding: 8px 10px;
+    transition: 0.15s;
+    border-radius: 10px;
+}
+
+.aside-link:hover {
+    background: #1f2937;
+    opacity: calc(0.8);
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+h1 {
+    font-size: 1.5rem;
+}

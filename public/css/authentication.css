@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+#form {
+    width: 100vw;
+    max-width: 450px;
+    background: #202937;
+}

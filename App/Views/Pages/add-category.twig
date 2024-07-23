@@ -1,0 +1,39 @@
+{% extends "Layouts/authenticated-layout.html" %}
+
+{% block page %}
+
+<h1>Adicionar uma nova categoria</h1>
+
+<ul class="breadcrumbs">
+    <li class="breadcrumb-item">
+        <a href="/">
+            Inicio
+        </a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="/">
+            Produtos
+        </a>
+    </li>
+    <li class="breadcrumb-item">
+        <a href="#" class="breadcrumb-item-active">
+            Categorias
+        </a>
+    </li>
+</ul>
+
+<form id="form" class="d-flex flex-column gap-4">
+    <div class="form-floating ">
+        <input type="text" class="form-control" id="category" placeholder="Nome da categoria">
+        <label for="category" class="text-muted">Nome da categoria</label>
+    </div>
+    <div class="w-100 d-flex justify-content-end">
+        <button class="btn btn-primary" type="submit">Adicionar</button>
+    </div>
+
+    
+
+
+</form>
+
+{% endblock %}

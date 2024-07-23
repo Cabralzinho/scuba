@@ -1,0 +1,100 @@
+{% extends 'Layouts/global-layout.html' %}
+
+{% block globalHead %}
+<link rel="stylesheet" href="/css/authenticated.css">
+{% block head %}
+{% endblock %}
+
+{% endblock %}
+
+{% block globalContent %}
+<div class="d-flex">
+    <aside class="d-flex flex-column align-items-center gap-4 p-4 desktop-nav">
+        <a href="/" class="text-white text-uppercase">Scuba admin</a>
+        <div class="horizontal-divider"></div>
+        <div class="d-flex flex-column gap-1 w-100">
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+
+                <i class="fa fa-home" aria-hidden="true"></i>
+
+
+                <span href="/" class="small fw-bold">Início</span>
+            </a>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                <span href="/" class="small fw-bold">Meu carrinho</span>
+            </a>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span href="/" class="small fw-bold">Meus pedidos</span>
+            </a>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                <span href="/" class="small fw-bold">Meus items</span>
+            </a>
+        </div>
+        <div class="d-flex flex-column gap-1 w-100">
+            <h2 class="text-muted w-100 px-2">Admin</h2>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <span class="small fw-bold">Clientes</span>
+            </a>
+            <a href="/products" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa-solid fa-shop"></i>
+
+                <span class="small fw-bold">Produtos</span>
+            </a>
+            <a href="/products/add-product" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                <span class="small fw-bold">Adicionar produtos</span>
+            </a>
+            <a href="/products/add-category" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                {# TODO: Add categories #}
+                <span class="small fw-bold">Categorias</span>
+            </a>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa-solid fa-receipt"></i>
+
+                <span class="small fw-bold">Pedidos</span>
+            </a>
+            <a href="/" class="d-flex align-items-center justify-content-start gap-2 w-100 aside-link">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                <span class="small fw-bold">Cupons</span>
+            </a>
+        </div>
+    </aside>
+    <div class="w-100">
+        <nav class="p-3 d-flex justify-content-between shadow w-100 top-nav">
+            <div class="d-flex bg-secondary rounded-2">
+                <input type="text" class="form-control bg-transparent border-0 placeholder-color" placeholder="Pesquisar">
+                <button class="btn btn-primary rounded-start-0 rounded-end-2 bg-transparent border-0">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex gap-3">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="d-flex align-items-center gap-2">
+                    <div class="small">Bolsonaro</div>
+                    <img src="https://imgs.search.brave.com/D0HgV8flkdpFkXbas2BqqplHWKZly4FmOBd98x2xAnQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/Lzk2L0JvbHNvbmFy/b19lbV9tYXIlQzMl/QTdvX2RlXzE5OTBf/KEFjZXJ2b19HbG9i/bykuanBn"
+                        class="rounded-circle bg-secondary object-fit-cover" style="width: 30px; height: 30px">
+                </div>
+            </div>
+        </nav>
+        <main class="p-3">
+            {% block page %}
+
+            {% endblock %}
+        </main>
+    </div>
+</div>
+{% endblock %}

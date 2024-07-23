@@ -1,0 +1,38 @@
+{% extends '/Layouts/authentication-layout.html' %}
+
+{% block head %}
+<title>Registro</title>
+{% endblock %}
+
+{% block page %}
+<main class="vh-100 d-flex justify-content-center align-items-center">
+    <form id="form" class="d-flex flex-column gap-3 px-3 py-5 rounded-3">
+        <p class="h5 text-center">Cadastre uma conta</p>
+
+        <div>
+            <label for="name" class="form-label">Nome</label>
+            <input class="form-control" id="name" type="text" name="name">
+        </div>
+        <div>
+            <label for="email" class="form-label">E-mail</label>
+            <input class="form-control" id="email" type="email" name="email">
+        </div>
+        <div>
+            <label for="password" class="form-label">Senha</label>
+            <input class="form-control" id="password" type="password" name="password">
+        </div>
+        <div>
+            <label for="confirmPassword" class="form-label">Repita Senha</label>
+            <input class="form-control" id="confirmPassword" type="password" name="confirmPassword">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+        <span class="text-center small">Ja possui conta?
+            <a class="text-primary-emphasis" href="/login">Clique Aqui</a>
+        </span>
+    </form>
+</main>
+
+<script src="/js/register.js"></script>
+{% endblock %}

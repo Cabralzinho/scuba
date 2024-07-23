@@ -1,0 +1,14 @@
+option:checked {
+    opacity: 0.5;
+}
+
+.selectedCategory {
+    height: fit-content;
+    border-radius: 999px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+#form {
+    max-width: 1300px;
+}
